@@ -35,7 +35,7 @@ app.post("/about", urlencodeparser, function(req, res){
     res.send("Received information: " + JSON.stringify(req.body) )
 })
 
-app.get('/contact/:name', function(req, res){
+app.post('/contact/:name', function(req, res){
     console.log("Get in touch with: " + req.params.name)
     console.log(req.body)
     
